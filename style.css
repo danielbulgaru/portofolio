@@ -16,12 +16,12 @@ section
 
 .banner
 {
-    /* position: relative; */
+    position: relative;
     min-height: 100vh;
     background: #000;
     /* background: url(images/banner.jpg); */
-    /* background-size: cover;
-    background-position: right; */
+    background-size: cover;
+    background-position: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +80,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 header.sticky
@@ -147,14 +147,8 @@ header.sticky ul li a
 
 .content h3
 {
-    display: flex;
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.content
-{
-    display: flex;
 }
 
 .portofolio
@@ -336,7 +330,7 @@ header.sticky ul li a
     {
         position: fixed;
         top: 75px;
-        left: 0;
+        left: -100%;
         display: block;
         padding: 100px 50px;
         text-align: center;
@@ -347,14 +341,100 @@ header.sticky ul li a
         z-index: 999;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
+    .menu.active
+    {
+        left: 0;
+    }
     header ul li a
     {
         color: #111;
+        font-size: 24px;
+        margin: 10px;
     }
     .toggle
     {
         width: 40px;
         height: 40px;
-        background: url(/images/);
+        background: url(/images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    .toggle.active
+    {
+        width: 40px;
+        height: 40px;
+        background: url(/images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 100px 50px;
+    }
+    .banner
+    {
+        padding: 150px 50px 100px;
+        display: block;
+        text-align: center;
+    }
+    .banner .profilePic .pic
+    {
+        padding-top: 50px;
+        max-width: 250px;
+    }
+    .banner h2
+    {
+        font-size: 1.5em;
+    }
+    .banner h3
+    {
+        font-size: 1em;
+    }
+    .btn
+    {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2
+    {
+        font-size: 24px;
+    }
+    .content h3
+    {
+        font-size: 20px;
+    }
+    .portofolio .content .portofolioBx
+    {
+        margin: 10px;
+    }
+    .contactInfo
+    {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 20px;
+    }
+    .banner
+    {
+        padding: 150px 20px 100px;
+    }
+    section
+    {
+        padding: 100px 20px;
     }
 }
