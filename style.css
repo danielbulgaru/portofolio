@@ -171,7 +171,7 @@ header.sticky ul li a
 
 .portofolio .content .portofolioBx
 {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background: #222;
     color: #fff;
     max-width: 600px;
@@ -203,7 +203,6 @@ header.sticky ul li a
 .portofolio .content .portofolioBx img
 {
     max-width: 500px;
-    filter: invert(0);
 }
 
 .portofolio .content .portofolioBx h2
@@ -388,7 +387,7 @@ header.sticky ul li a
     .banner .profilePic .pic
     {
         padding-top: 50px;
-        max-width: 250px;
+        max-width: 70%;
     }
     .banner h2
     {
@@ -414,7 +413,12 @@ header.sticky ul li a
     }
     .portofolio .content .portofolioBx
     {
+        padding: 10px 10px;
         margin: 10px;
+    }
+    .portofolio .content .portofolioBx img
+    {
+        max-width: 90%;
     }
     .contactInfo
     {
