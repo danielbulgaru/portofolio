@@ -11,3 +11,4 @@ function toggleMenu(){
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
 }
+
